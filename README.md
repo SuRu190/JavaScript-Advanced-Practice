@@ -1,6 +1,3 @@
-
----
-
 # 📂 **Root README.md (Summary README)**
 ---
 # 🚀 JavaScript 10-Day Advanced Practice
