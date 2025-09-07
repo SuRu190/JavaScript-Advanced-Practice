@@ -44,16 +44,3 @@ Each day focuses on a **specific set of advanced JS topics** with **practice que
 - **Tools:** VS Code, Node.js, GitHub  
 
 ---
-
-## 📂 Repository Structure
-JavaScript-Advanced-Practice/
-│
-├── Day-01/
-│── README.md # Detailed questions + answers
-│── Day-01.js # Code file with solutions
-│
-├── Day-02/
-│── README.md
-│── Day-02.js
-│
-... up to Day-10
