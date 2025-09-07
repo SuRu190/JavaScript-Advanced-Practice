@@ -1,5 +1,3 @@
-# 📂 **Root README.md (Summary README)**
----
 # 🚀 JavaScript 10-Day Advanced Practice
 
 This repository is a **10-day JavaScript advanced learning challenge**.  
