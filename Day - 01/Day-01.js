@@ -1,3 +1,6 @@
+// 🚀 Day 1 – Advanced Functions Practice
+// This file contains 20 practice questions with solutions covering: Function Declarations, Function Expressions, Arrow Functions, Default Parameters, Rest & Spread, Higher-Order Functions.
+
 // ----------------------------------------------------
 // Q1. Function Declaration vs Expression
 // ----------------------------------------------------
