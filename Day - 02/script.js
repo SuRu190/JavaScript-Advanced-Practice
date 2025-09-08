@@ -1,5 +1,5 @@
 // 🚀 Day 2 – Array Advanced Methods Practice
-// This file contains 20+ practice questions with solutions covering: forEach(), map(), filter(), reduce(), some(), every(), find(), findIndex, sort, slice, splice.
+// This file contains 20+ practice questions with solutions covering: forEach(), map(), filter(), reduce(), some(), every(), find(), findIndex(), sort, slice, splice.
 
 // ====================================================
 // 🔹 forEach
