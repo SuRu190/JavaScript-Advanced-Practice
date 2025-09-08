@@ -26,7 +26,7 @@ Each day focuses on a **specific set of advanced JS topics** with **practice que
 
 ### ⚡ Day 2 – Array Advanced Methods
 - **Topics Covered:** `forEach`, `map`, `filter`, `reduce`, `some`, `every`, `find`, `findIndex`, `sort`, `slice`, `splice`.  
-- **Total Questions:** 28
+- **Total Questions:** 31
 - **What I Practiced:** Iterating arrays in multiple ways, transforming and filtering data, using reduce for accumulation, sorting with custom logic, extracting/modifying arrays.  
 - **What I Learned:**  
   - Difference between **map vs forEach** (map returns new array, forEach doesn’t).  
