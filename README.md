@@ -22,7 +22,20 @@ Each day focuses on a **specific set of advanced JS topics** with **practice que
 - **What I Practiced:** Writing concise functions, using arrow functions effectively, merging arrays/objects, applying higher-order functions.  
 - **What I Learned:** How to simplify code with default params, use rest/spread for flexibility, and build higher-order functions.
 
-### 📅 Day 2 – (Coming Soon...)
+---
+
+### ⚡ Day 2 – Array Advanced Methods
+- **Topics Covered:** `forEach`, `map`, `filter`, `reduce`, `some`, `every`, `find`, `findIndex`, `sort`, `slice`, `splice`.  
+- **Total Questions:** 28
+- **What I Practiced:** Iterating arrays in multiple ways, transforming and filtering data, using reduce for accumulation, sorting with custom logic, extracting/modifying arrays.  
+- **What I Learned:**  
+  - Difference between **map vs forEach** (map returns new array, forEach doesn’t).  
+  - How to use **filter** to get subsets of data.  
+  - Using **reduce** for sum, average, max/min.  
+  - Boolean checks with **some** and **every**.  
+  - Searching with **find** & **findIndex**.  
+  - Sorting numbers, strings, and objects using **custom comparison**.  
+  - Clear understanding of **slice (non-mutating)** vs **splice (mutating)**.
 
 ---
 
@@ -37,5 +50,3 @@ Each day focuses on a **specific set of advanced JS topics** with **practice que
 ## 🛠️ Tech Stack
 - **Language:** JavaScript (ES6+)  
 - **Tools:** VS Code, Node.js, GitHub  
-
----
