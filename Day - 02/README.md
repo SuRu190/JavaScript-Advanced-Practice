@@ -216,6 +216,7 @@ second.splice(3, 3, 40, 50, 60);
 console.log(second);
 
 // Q31. Remove element
+const colors = ["red", "green", "blue", "yellow", "purple"];
 const removed = colors.splice(2, 1);
 console.log("Removed:", removed);
 console.log("After splice:", colors);
