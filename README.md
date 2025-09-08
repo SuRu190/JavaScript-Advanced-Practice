@@ -22,7 +22,6 @@ Each day focuses on a **specific set of advanced JS topics** with **practice que
 - **What I Practiced:** Writing concise functions, using arrow functions effectively, merging arrays/objects, applying higher-order functions.  
 - **What I Learned:** How to simplify code with default params, use rest/spread for flexibility, and build higher-order functions.
 
----
 
 ### ⚡ Day 2 – Array Advanced Methods
 - **Topics Covered:** `forEach`, `map`, `filter`, `reduce`, `some`, `every`, `find`, `findIndex`, `sort`, `slice`, `splice`.  
