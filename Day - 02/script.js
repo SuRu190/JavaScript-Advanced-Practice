@@ -1,5 +1,5 @@
 // 🚀 Day 2 – Array Advanced Methods Practice
-// This file contains 28+ practice questions with solutions covering:
+// This file contains 20+ practice questions with solutions covering:
 // forEach, map, filter, reduce, some, every, find, findIndex, sort, slice, splice.
 
 // ====================================================
