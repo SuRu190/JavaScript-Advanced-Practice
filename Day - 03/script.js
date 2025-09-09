@@ -1,43 +1,87 @@
-/* -------------------------
-   🚀 Day 3 – Destructuring, Template Literals & setTimeout
-   This file contains 16 JavaScript practice questions with solutions covering: Array & Object Destructuring, Nested Destructuring, Default Values in Destructuring, Template Literals, setTimeout in loops.
-   ------------------------- 
-*/
+// 🚀 Day 3 – Destructuring, Template Literals, setTimeout
+// This file contains 18 practice questions with solutions covering: setTimeout, Template Literals, Array Destructuring, Object Destructuring, and Nested Destructuring.
 
-// Q1. Destructuring an array
+// ====================================================
+// 🔹 setTimeout
+// ====================================================
+
+// Q1. Print numbers with delay
+for (let i = 0; i < 3; i++) {
+  setTimeout(() => console.log(i), 100);
+}
+
+// ====================================================
+// 🔹 Template Literals
+// ====================================================
+
+// Q2. Greeting message
+function greet(name, age) {
+  return `Hello, my name is ${name}, and i am ${age} years old`
+}
+console.log(greet("Suresh", 21));
+
+// ====================================================
+// 🔹 Basic Array Destructuring
+// ====================================================
+
+// Q3. Extract 1st and 3rd fruit
+const fruits = ["apple", "banana", "cherry"];
+const [f1, , f3] = fruits;
+console.log(f1);
+console.log(f3);
+
+// Q4. Object destructuring (user)
+const user = { id: 101, name: "Aman", city: "Delhi" };
+const { name, city } = user;
+console.log(`Name: ${name}, City: ${city}`);
+
+// Q5. Numbers destructuring
 const numbers = [10, 20, 30];
 const [a, , c] = numbers;
 console.log(`a = ${a}`);
 console.log(`c = ${c}`);
 
-// Q2. Destructuring with skipping values
+// Q6. Colors destructuring
 const colors = ["red", "green", "blue", "yellow"];
 const [, second, , fourth] = colors;
 console.log(`second color = ${second}`);
 console.log(`fourth color = ${fourth}`);
 
-// Q3. Destructuring coordinates
+// Q7. Coordinates destructuring
 const coords = [12, 45, 78];
 const [x, y, z] = coords;
-console.log(x, y, z);
+console.log(x);
+console.log(y);
+console.log(z);
 
-// Q4. Object destructuring
+// ====================================================
+// 🔹 Basic Object Destructuring
+// ====================================================
+
+// Q8. Car object
 const car = { brand: "Tesla", model: "X", year: 2022 };
 const { brand, year } = car;
 console.log(`Brand: ${brand}`);
 console.log(`Year: ${year}`);
 
-// Q5. Object destructuring with multiple properties
+// Q9. Laptop object
 const laptop = { cpu: "i5", ram: "8GB", storage: "512GB" };
 const { cpu, ram, storage } = laptop;
-console.log(`CPU: ${cpu}, RAM: ${ram}, Storage: ${storage}`);
+console.log(`CPU: ${cpu}`);
+console.log(`RAM: ${ram}`);
+console.log(`Storage: ${storage}`);
 
-// Q6. Destructuring with renamed variables
+// Q10. Person object
 const person = { name: "Suresh", age: 23, city: "Delhi" };
-const { name, city } = person;
-console.log(`Name: ${name}, City: ${city}`);
+const { name: pName, city: pCity } = person;
+console.log(`Name: ${pName}`);
+console.log(`City: ${pCity}`);
 
-// Q7. Nested array of objects destructuring
+// ====================================================
+// 🔹 Array of Objects Destructuring
+// ====================================================
+
+// Q11. Extract from array of objects
 const users = [
   { id: 1, username: "Aman" },
   { id: 2, username: "Neha" },
@@ -46,29 +90,42 @@ const users = [
 ];
 const [{ id: firstUserID }, , { username: thirdUserName }] = users;
 console.log(`firstUserID = ${firstUserID}`);
-console.log(`thirdUserName = ${thirdUserName}`);
+console.log(`thirdUserName = "${thirdUserName}"`);
 
-// Q8. Simple array destructuring
-const fruits = ["apple", "banana", "mango"];
-const [fruit1, , fruit3] = fruits;
-console.log(fruit1, fruit3);
+// ====================================================
+// 🔹 More Array Destructuring
+// ====================================================
 
-// Q9. Skipping values with arrays
+// Q12. Fruits
+const fruits2 = ["apple", "banana", "mango"];
+const [fruit1, , fruit3] = fruits2;
+console.log(fruit1);
+console.log(fruit3);
+
+// Q13. Numbers
 const nums = [100, 200, 300, 400];
 const [, secondNum, , fourthNum] = nums;
-console.log(secondNum, fourthNum);
+console.log(secondNum);
+console.log(fourthNum);
 
-// Q10. Nested array destructuring
+// Q14. Nested array
 const values = [1, 2, [3, 4]];
-const [first, ,[third, fourth]] = values;
-console.log(first, third, fourth);
+const [first, , [third, fourth]] = values;
+console.log(first);
+console.log(third);
+console.log(fourth);
 
-// Q11. Object destructuring
+// Q15. Student object
 const student = { name: "Suresh", age: 23, course: "B.Tech" };
-const { name: studentName, course } = student;
-console.log(studentName, course);
+const { name: sName, course } = student;
+console.log(sName);
+console.log(course);
 
-// Q12. Nested object destructuring (Weather API example)
+// ====================================================
+// 🔹 Advanced Nested Destructuring
+// ====================================================
+
+// Q16. API Response (weather)
 const apiResponse = {
   location: { city: "Delhi", country: "India" },
   forecast: {
@@ -81,15 +138,15 @@ const apiResponse = {
 const {
   location: { city: locCity, country },
   forecast: { temperature: { current, feels_like, humidity = "Not Provided" }, condition },
-  wind: { speed },
+  wind: { speed }
 } = apiResponse;
 
 console.log(`📍 Location: ${locCity}, ${country}`);
-console.log(`🌡 Temp: ${current}°C (Feels like ${feels_like}°C), Humidity: ${humidity}`);
+console.log(`🌡 Temperature: ${current}°C (Feels like ${feels_like}°C), 💧 Humidity : ${humidity}`);
 console.log(`☀️ Condition: ${condition}`);
-console.log(`💨 Wind Speed: ${speed} km/h`);
+console.log(`💨 Wind: ${speed} km/h`);
 
-// Q13. Nested object destructuring with defaults
+// Q17. API Data (users + meta)
 const apiData = {
   users: [
     { id: 1, name: "Aman", age: 25 },
@@ -109,11 +166,11 @@ const {
 } = apiData;
 
 console.log(`👤 First User: ${firstUserName}`);
-console.log(`🎂 Second User Age: ${secondUserAge}`);
+console.log(`🎂 Second User Age : ${secondUserAge}`);
 console.log(`🆔 Third User ID: ${thirdUserId}`);
 console.log(`📊 Status: ${status}`);
 
-// Q14. Complex destructuring with missing nested objects
+// Q18. API Response (optional chaining style)
 const apiResponse2 = {
   users: [
     { id: 1, name: "Ravi", details: { age: 28, city: "Delhi" } },
@@ -127,23 +184,12 @@ const {
   users: [
     { details: { city: firstUserCity } },
     { details: { age: secondUserAge = "Not Provided" } = {} },
-    { id: thirdId }
+    { id: thirdUserId }
   ],
-  meta: { verified }
+  meta: { verified: verification }
 } = apiResponse2;
 
 console.log(`🏙 Ravi's City: ${firstUserCity}`);
 console.log(`🎂 Priya's Age: ${secondUserAge}`);
-console.log(`🆔 Suresh's ID: ${thirdId}`);
-console.log(`✅ Verified: ${verified}`);
-
-// Q15. setTimeout inside loop
-for (let i = 0; i < 3; i++) {
-  setTimeout(() => console.log(i), 100);
-}
-
-// Q16. Template literals
-function greet(name, age) {
-  return `Hello, my name is ${name}, and I am ${age} years old.`;
-}
-console.log(greet("Suresh", 21));
+console.log(`🆔 Suresh's ID: ${thirdUserId}`);
+console.log(`✅ Verified: ${verification}`);
