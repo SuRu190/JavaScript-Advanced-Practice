@@ -33,97 +33,196 @@ This file contains **16 JavaScript practice questions with solutions** covering:
 # 📝 Questions & Answers
 
 ```js
-// Q1. Destructure an array
-const numbers = [10,20,30];
-const [a, , c] = numbers;
-console.log(a, c);
 
-// Q2. Destructure with skipping
-const colors = ["red", "green", "blue", "yellow"];
-const [, second, , fourth] = colors;
-console.log(second, fourth);
+// ====================================================
+// 🔹 setTimeout
+// ====================================================
 
-// Q3. Destructure coordinates
-const coords = [12, 45, 78];
-const [x, y, z] = coords;
-console.log(x, y, z);
-
-// Q4. Object destructuring
-const car = { brand: "Tesla", model: "X", year: 2022 };
-const { brand, year } = car;
-console.log(brand, year);
-
-// Q5. Multiple properties
-const laptop = { cpu: "i5", ram: "8GB", storage: "512GB" };
-const { cpu, ram, storage } = laptop;
-console.log(cpu, ram, storage);
-
-// Q6. Object destructuring with renaming
-const person = { name: "Suresh", age: 23, city: "Delhi" };
-const { name, city } = person;
-console.log(name, city);
-
-// Q7. Nested array of objects
-const users = [
-  { id: 1, username: "Aman" },
-  { id: 2, username: "Neha" },
-  { id: 3, username: "Suresh" }
-];
-const [{ id: firstUserID }, , { username: thirdUserName }] = users;
-console.log(firstUserID, thirdUserName);
-
-// Q8. Array destructuring
-const fruits = ["apple", "banana", "mango"];
-const [fruit1, , fruit3] = fruits;
-console.log(fruit1, fruit3);
-
-// Q9. Skipping values
-const nums = [100, 200, 300, 400];
-const [, secondNum, , fourthNum] = nums;
-console.log(secondNum, fourthNum);
-
-// Q10. Nested array destructuring
-const values = [1, 2, [3, 4]];
-const [first, ,[third, fourth]] = values;
-console.log(first, third, fourth);
-
-// Q11. Object destructuring
-const student = { name: "Suresh", age: 23, course: "B.Tech" };
-const { name: studentName, course } = student;
-console.log(studentName, course);
-
-// Q12. Nested object destructuring (Weather API)
-const apiResponse = {
-  location: { city: "Delhi", country: "India" },
-  forecast: { temperature: { current: 32, feels_like: 35, humidity: "60%" }, condition: "Sunny" },
-  wind: { speed: 12 }
-};
-const { location: { city: locCity, country }, forecast: { temperature: { current }, condition } } = apiResponse;
-console.log(locCity, country, current, condition);
-
-// Q13. Nested object with defaults
-const apiData = {
-  users: [{ name: "Aman", age: 25 }, { name: "Neha" }, { id: 3, name: "Suresh", age: 23 }],
-  meta: { status: "active" }
-};
-const { users: [ { name: firstUserName }, { age: secondUserAge = "Not Provided" } ] } = apiData;
-console.log(firstUserName, secondUserAge);
-
-// Q14. Complex nested destructuring
-const apiResponse2 = {
-  users: [{ id: 1, name: "Ravi", details: { city: "Delhi" } }, { id: 2, name: "Priya" }, { id: 3, name: "Suresh", details: { age: 23 } }],
-  meta: { verified: true }
-};
-const { users: [{ details: { city: firstUserCity } }, { details: { age: secondUserAge = "Not Provided" } = {} }] } = apiResponse2;
-console.log(firstUserCity, secondUserAge);
-
-// Q15. setTimeout with loop
+// Q1. Print numbers with delay
 for (let i = 0; i < 3; i++) {
   setTimeout(() => console.log(i), 100);
 }
 
-// Q16. Template literals
+// ====================================================
+// 🔹 Template Literals
+// ====================================================
+
+// Q2. Greeting message
 function greet(name, age) {
-  return `Hello, my name is ${name}, and I am ${age} years old.`;
+  return `Hello, my name is ${name}, and i am ${age} years old`
 }
 console.log(greet("Suresh", 21));
+
+// ====================================================
+// 🔹 Basic Array Destructuring
+// ====================================================
+
+// Q3. Extract 1st and 3rd fruit
+const fruits = ["apple", "banana", "cherry"];
+const [f1, , f3] = fruits;
+console.log(f1);
+console.log(f3);
+
+// Q4. Object destructuring (user)
+const user = { id: 101, name: "Aman", city: "Delhi" };
+const { name, city } = user;
+console.log(`Name: ${name}, City: ${city}`);
+
+// Q5. Numbers destructuring
+const numbers = [10, 20, 30];
+const [a, , c] = numbers;
+console.log(`a = ${a}`);
+console.log(`c = ${c}`);
+
+// Q6. Colors destructuring
+const colors = ["red", "green", "blue", "yellow"];
+const [, second, , fourth] = colors;
+console.log(`second color = ${second}`);
+console.log(`fourth color = ${fourth}`);
+
+// Q7. Coordinates destructuring
+const coords = [12, 45, 78];
+const [x, y, z] = coords;
+console.log(x);
+console.log(y);
+console.log(z);
+
+// ====================================================
+// 🔹 Basic Object Destructuring
+// ====================================================
+
+// Q8. Car object
+const car = { brand: "Tesla", model: "X", year: 2022 };
+const { brand, year } = car;
+console.log(`Brand: ${brand}`);
+console.log(`Year: ${year}`);
+
+// Q9. Laptop object
+const laptop = { cpu: "i5", ram: "8GB", storage: "512GB" };
+const { cpu, ram, storage } = laptop;
+console.log(`CPU: ${cpu}`);
+console.log(`RAM: ${ram}`);
+console.log(`Storage: ${storage}`);
+
+// Q10. Person object
+const person = { name: "Suresh", age: 23, city: "Delhi" };
+const { name: pName, city: pCity } = person;
+console.log(`Name: ${pName}`);
+console.log(`City: ${pCity}`);
+
+// ====================================================
+// 🔹 Array of Objects Destructuring
+// ====================================================
+
+// Q11. Extract from array of objects
+const users = [
+  { id: 1, username: "Aman" },
+  { id: 2, username: "Neha" },
+  { id: 3, username: "Suresh" },
+  { id: 4, username: "Mohit" },
+];
+const [{ id: firstUserID }, , { username: thirdUserName }] = users;
+console.log(`firstUserID = ${firstUserID}`);
+console.log(`thirdUserName = "${thirdUserName}"`);
+
+// ====================================================
+// 🔹 More Array Destructuring
+// ====================================================
+
+// Q12. Fruits
+const fruits2 = ["apple", "banana", "mango"];
+const [fruit1, , fruit3] = fruits2;
+console.log(fruit1);
+console.log(fruit3);
+
+// Q13. Numbers
+const nums = [100, 200, 300, 400];
+const [, secondNum, , fourthNum] = nums;
+console.log(secondNum);
+console.log(fourthNum);
+
+// Q14. Nested array
+const values = [1, 2, [3, 4]];
+const [first, , [third, fourth]] = values;
+console.log(first);
+console.log(third);
+console.log(fourth);
+
+// Q15. Student object
+const student = { name: "Suresh", age: 23, course: "B.Tech" };
+const { name: sName, course } = student;
+console.log(sName);
+console.log(course);
+
+// ====================================================
+// 🔹 Advanced Nested Destructuring
+// ====================================================
+
+// Q16. API Response (weather)
+const apiResponse = {
+  location: { city: "Delhi", country: "India" },
+  forecast: {
+    temperature: { current: 32, feels_like: 35, humidity: "60%" },
+    condition: "Sunny",
+  },
+  wind: { speed: 12, direction: "NE" },
+};
+
+const {
+  location: { city: locCity, country },
+  forecast: { temperature: { current, feels_like, humidity = "Not Provided" }, condition },
+  wind: { speed }
+} = apiResponse;
+
+console.log(`📍 Location: ${locCity}, ${country}`);
+console.log(`🌡 Temperature: ${current}°C (Feels like ${feels_like}°C), 💧 Humidity : ${humidity}`);
+console.log(`☀️ Condition: ${condition}`);
+console.log(`💨 Wind: ${speed} km/h`);
+
+// Q17. API Data (users + meta)
+const apiData = {
+  users: [
+    { id: 1, name: "Aman", age: 25 },
+    { id: 2, name: "Neha" }, // age missing
+    { id: 3, name: "Suresh", age: 23 }
+  ],
+  meta: { totalUsers: 3, status: "active" }
+};
+
+const {
+  users: [
+    { name: firstUserName },
+    { age: secondUserAge = "Not Provided" },
+    { id: thirdUserId }
+  ],
+  meta: { status }
+} = apiData;
+
+console.log(`👤 First User: ${firstUserName}`);
+console.log(`🎂 Second User Age : ${secondUserAge}`);
+console.log(`🆔 Third User ID: ${thirdUserId}`);
+console.log(`📊 Status: ${status}`);
+
+// Q18. API Response (optional chaining style)
+const apiResponse2 = {
+  users: [
+    { id: 1, name: "Ravi", details: { age: 28, city: "Delhi" } },
+    { id: 2, name: "Priya" }, // details missing
+    { id: 3, name: "Suresh", details: { age: 23 } }
+  ],
+  meta: { total: 3, verified: true }
+};
+
+const {
+  users: [
+    { details: { city: firstUserCity } },
+    { details: { age: secondUserAge = "Not Provided" } = {} },
+    { id: thirdUserId }
+  ],
+  meta: { verified: verification }
+} = apiResponse2;
+
+console.log(`🏙 Ravi's City: ${firstUserCity}`);
+console.log(`🎂 Priya's Age: ${secondUserAge}`);
+console.log(`🆔 Suresh's ID: ${thirdUserId}`);
+console.log(`✅ Verified: ${verification}`);
