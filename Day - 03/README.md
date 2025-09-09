@@ -2,11 +2,11 @@
 
 ## 📌 Overview
 This file contains **16 JavaScript practice questions with solutions** covering:
-- Array & Object Destructuring  
-- Nested Destructuring  
-- Default Values in Destructuring  
-- Template Literals  
-- setTimeout in loops  
+- `Array` & `Object Destructuring`
+- `Nested Destructuring`  
+- Default Values in `Destructuring`  
+- `Template Literals`  
+- `setTimeout` in loops  
 
 ---
 
