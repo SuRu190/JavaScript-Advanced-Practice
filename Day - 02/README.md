@@ -1,7 +1,7 @@
 # 🚀 Day 2 – Array Advanced Methods Practice
 
 ## 📌 Overview
-This file contains **31 JavaScript practice questions with solutions** covering:
+This file contains **30+ JavaScript practice questions with solutions** covering:
 - `forEach`, `map`, `filter`, `reduce`
 - `some`, `every`, `find`, `findIndex`
 - `sort`, `slice`, `splice`
