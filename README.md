@@ -52,7 +52,7 @@ Each day focuses on a **specific set of advanced JS topics** with **practice que
 ---
 
 ### 🎯 Day 4 – DOM Deep Dive
-- **Topics Covered:** `Event Bubbling` & `Capturing`, `Event Delegation`, `Input Events`, Mouse Events, Double Click + Random Colors, Form Handling.  
+- **Topics Covered:** `Event Bubbling` & `Capturing`, `Event Delegation`, `Input Events`, `Mouse Events`, Double Click + Random Colors, Form Handling.  
 - **Total Questions:** 10  
 - **What I Practiced:** Adding event listeners, using capturing vs bubbling, applying event delegation for efficiency, handling keyboard/mouse input, and working with forms dynamically.  
 - **What I Learned:**  
