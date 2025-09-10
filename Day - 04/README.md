@@ -2,11 +2,11 @@
 
 ## 📌 Overview
 This file contains **10 JavaScript DOM practice questions with solutions** covering:  
-- Event Bubbling & Capturing  
-- Event Delegation  
-- Input Events  
-- Mouse Events  
-- Double Click + Random Colors  
+- `Event Bubbling` & `Capturing`
+- `Event Delegation` 
+- `Input Events`  
+- `Mouse Events`  
+- `Double Click` + Random Colors  
 - Form Handling  
 
 ---
