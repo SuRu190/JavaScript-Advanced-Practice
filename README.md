@@ -40,7 +40,7 @@ Each day focuses on a **specific set of advanced JS topics** with **practice que
 ---
 
 ### 📘 Day 3 – Destructuring, Template Literals & setTimeout
-- **Topics Covered:** Array & Object Destructuring, Nested Destructuring, Default Values, Template Literals, setTimeout in loops.  
+- **Topics Covered:** `Array` & `Object Destructuring`, `Nested Destructuring`, Default Values, `Template Literals`, `setTimeout` in loops.  
 - **Total Questions:** 18  
 - **What I Practiced:** Extracting values from arrays/objects, renaming variables, skipping items, applying default values, and handling nested data structures.  
 - **What I Learned:**  
