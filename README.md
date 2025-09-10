@@ -39,6 +39,30 @@ Each day focuses on a **specific set of advanced JS topics** with **practice que
 
 ---
 
+### 📘 Day 3 – Destructuring, Template Literals & setTimeout
+- **Topics Covered:** Array & Object Destructuring, Nested Destructuring, Default Values, Template Literals, setTimeout in loops.  
+- **Total Questions:** 18  
+- **What I Practiced:** Extracting values from arrays/objects, renaming variables, skipping items, applying default values, and handling nested data structures.  
+- **What I Learned:**  
+  - How to use **destructuring** for clean code.  
+  - Handling **missing properties** with defaults.  
+  - Creating **dynamic strings** with template literals.  
+  - How **setTimeout with closures** behaves inside loops.  
+
+---
+
+### 🎯 Day 4 – DOM Deep Dive
+- **Topics Covered:** Event Bubbling & Capturing, Event Delegation, Input Events, Mouse Events, Double Click + Random Colors, Form Handling.  
+- **Total Questions:** 10  
+- **What I Practiced:** Adding event listeners, using capturing vs bubbling, applying event delegation for efficiency, handling keyboard/mouse input, and working with forms dynamically.  
+- **What I Learned:**  
+  - Clear difference between **bubbling** and **capturing**.  
+  - How to use **delegation** for dynamic elements.  
+  - Generating **random colors** with events.  
+  - Preventing **form reload** and showing success messages.  
+
+---
+
 ## ✅ Why This Repo?
 - To **master advanced JavaScript step by step**.  
 - To **practice coding daily** and stay consistent.  
