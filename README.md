@@ -63,6 +63,18 @@ Each day focuses on a **specific set of advanced JS topics** with **practice que
 
 ---
 
+### ⚙️ Day 5 – setInterval, Callback Hell & Promises (Basics)
+- **Topics Covered:** `setInterval`, Stopping intervals, Nested `setTimeout` (callback hell), Introduction to **Promises** (resolve, reject, then, catch).  
+- **Total Questions:** 12  
+- **What I Practiced:** Creating repeating tasks with `setInterval`, clearing intervals, handling async code with multiple callbacks, and writing promise-based code.  
+- **What I Learned:**  
+  - How to use **setInterval** and stop it using `clearInterval`.  
+  - Why nested callbacks cause **callback hell**.  
+  - Basics of **Promises** for cleaner async handling.  
+  - Using `.then` and `.catch` for success/error handling.  
+
+---
+
 ## ✅ Why This Repo?
 - To **master advanced JavaScript step by step**.  
 - To **practice coding daily** and stay consistent.  
