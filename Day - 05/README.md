@@ -42,7 +42,7 @@ This day is all about **hands-on DOM practice** through **4 small projects**:
 ### 🔹 Random Color Generator
 - Click the box → generates random RGB color.  
 - ✅ Output Example:  
-  - "Color: rgb(123, 45, 67)" logged in console & displayed on screen.  
+  - "Color: `rgb(123, 45, 67)"` logged in console & displayed on screen.  
 
 ---
 
