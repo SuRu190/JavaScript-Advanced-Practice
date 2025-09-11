@@ -11,7 +11,7 @@ This day is all about **hands-on DOM practice** through **4 small projects**:
 
 ## 🎯 Topics Covered
 - `addEventListener()` with **click** & **input** events  
-- Updating **textContent** dynamically  
+- Updating `textContent` dynamically  
 - Generating **random RGB colors**  
 - **Creating & removing elements** dynamically  
 - Toggling **CSS classes** for completed tasks  
