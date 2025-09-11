@@ -48,7 +48,7 @@ This day is all about **hands-on DOM practice** through **4 small projects**:
 
 ### 🔹 To-Do List
 - Add tasks → display as list items.  
-- Click a task → marks it as **completed** (line-through).  
+- Click a task → marks it as **completed** `(line-through)`.  
 - Delete button → removes that task.  
 - ✅ Output Example:  
   - Enter `Learn JS` → added in list.  
