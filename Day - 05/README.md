@@ -1,7 +1,7 @@
 # 🚀 Day 5 – DOM Projects
 
 ## 📌 Overview
-This day is all about **hands-on DOM practice** through **4 small projects**:
+This day is all about **hands-on DOM Practice** through **4 small projects**:
 1. Counter App  
 2. Random Color Generator  
 3. To-Do List (Add/Delete/Complete)  
