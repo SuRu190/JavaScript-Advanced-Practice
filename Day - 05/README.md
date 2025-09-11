@@ -27,7 +27,7 @@ This day is all about **hands-on DOM Practice** through **4 small projects**:
 - Live reflecting user input inside the DOM.  
 
 ---
-
+ 
 ## 📝 Projects & Output Examples
 
 ### 🔹 Counter App
