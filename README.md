@@ -63,15 +63,15 @@ Each day focuses on a **specific set of advanced JS topics** with **practice que
 
 ---
 
-### ⚙️ Day 5 – setInterval, Callback Hell & Promises (Basics)
-- **Topics Covered:** `setInterval`, Stopping intervals, Nested `setTimeout` (callback hell), Introduction to **Promises** (resolve, reject, then, catch).  
-- **Total Questions:** 12  
-- **What I Practiced:** Creating repeating tasks with `setInterval`, clearing intervals, handling async code with multiple callbacks, and writing promise-based code.  
+### ⚙️ Day 5 – DOM Projects
+- **Topics Covered:** Counter App, Random Color Generator, To-Do List (Add/Delete/Complete), Input Field + Live Preview.  
+- **Total Projects:** 4  
+- **What I Practiced:** Building interactive mini apps using DOM manipulation, handling click & input events, dynamically creating/removing elements, and toggling CSS classes.  
 - **What I Learned:**  
-  - How to use **setInterval** and stop it using `clearInterval`.  
-  - Why nested callbacks cause **callback hell**.  
-  - Basics of **Promises** for cleaner async handling.  
-  - Using `.then` and `.catch` for success/error handling.  
+  - Creating reusable **event-driven logic**.  
+  - Handling **dynamic content** in real-world apps (To-Do List).  
+  - Updating UI instantly with **live input preview**.  
+  - Generating and applying **random RGB colors**.  
 
 ---
 
