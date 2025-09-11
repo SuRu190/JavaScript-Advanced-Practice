@@ -8,7 +8,7 @@ This day is all about **hands-on DOM Practice** through **4 small projects**:
 4. Input Field + Live Preview  
 
 ---
-
+ 
 ## 🎯 Topics Covered
 - `addEventListener()` with **click** & **input** events  
 - Updating `textContent` dynamically  
