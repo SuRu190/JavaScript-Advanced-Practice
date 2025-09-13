@@ -30,7 +30,7 @@ This file contains **20 JavaScript practice questions with solutions** covering:
 ---
 
 # 📝 Questions & Solutions
-Each Q has been added inside [`day06.js`](./day06.js).  
+Each Questions has been added inside (./day06.js).  
 👉 **Q17 & Q18 require HTML setup** – already included in [`index.html`](./index.html).
 
 ---
