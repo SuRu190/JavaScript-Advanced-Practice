@@ -75,6 +75,29 @@ Each day focuses on a **specific set of advanced JS topics** with **practice que
 
 ---
 
+### 🌀 Day 6 – Async JavaScript (setTimeout, Callbacks, Promises, Chaining)
+- **Topics Covered:**  
+  - `setTimeout` & `setInterval`  
+  - Callbacks & Callback Hell  
+  - Promises & Chaining  
+  - Async simulation with Fake API  
+  - DOM Event handling with Promises
+- **Total Questions:** 20  
+- **What I Practiced & Learned:**  
+  - Difference between **callbacks vs promises**  
+  - How **callback hell** makes code messy  
+  - Why **Promises** are better (chaining, cleaner flow)  
+  - How to build a **fake API** simulation  
+  - DOM + Promises → async operations with buttons  
+
+- **Sample Questions / Features:**  
+  - Delays & intervals using `setTimeout` / `setInterval`  
+  - Sequential async tasks using **callback chaining**  
+  - Handling random success/failure in Promises  
+  - Updating DOM after async operations  
+
+---
+
 ## ✅ Why This Repo?
 - To **master advanced JavaScript step by step**.  
 - To **practice coding daily** and stay consistent.  
