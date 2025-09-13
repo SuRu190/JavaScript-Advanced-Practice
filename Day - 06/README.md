@@ -3,7 +3,7 @@
 ## 📌 Overview
 This file contains **20 JavaScript practice questions with solutions** covering:
 - `setTimeout` & `setInterval`
-- Callbacks & Callback Hell
+- `Callbacks` & `Callback Hell`
 - Promises & Chaining
 - Async simulation with Fake API
 - DOM Event handling with Promises
