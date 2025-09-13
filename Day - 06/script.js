@@ -1,5 +1,5 @@
 // 🚀 Day 6 – Async JavaScript (setTimeout, Callbacks, Promises, Chaining)
-// This file contains 20 practice questions with solutions covering: setTimeout, setInterval, callback
+// This file contains 20 practice questions with solutions covering: setTimeout, setInterval, callbacks, callback hell
 
 // ====================================================
 // 🔹 setTimeout & setInterval Basics
