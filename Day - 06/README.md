@@ -11,7 +11,7 @@ This file contains **20 JavaScript practice questions with solutions** covering:
 ---
 
 ## 🎯 Topics Covered
-- Delays & intervals using **setTimeout / setInterval**
+- Delays & intervals using `**setTimeout` / `setInterval**`
 - Handling async flow using **callbacks**
 - The problem of **callback hell**
 - Using **Promises** for cleaner async code
