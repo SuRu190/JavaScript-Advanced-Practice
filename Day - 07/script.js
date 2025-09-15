@@ -1,7 +1,6 @@
 // 🚀 Day 7 – Fetch API, Async/Await, JSON & Error Handling
 // This file contains practice questions covering: Fetch API with .then(), Async/Await, Error Handling (try...catch), JSON (parse, stringify), Mixed Practice (nested fetch, multiple endpoints)
 
-
 // ====================================================
 // 🔹 Fetch API with .then()
 // ====================================================
