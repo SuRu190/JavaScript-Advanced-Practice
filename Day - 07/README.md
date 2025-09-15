@@ -1,7 +1,7 @@
 # 🚀 Day 7 – Fetch, Async/Await & JSON
 
 ## 📌 Overview
-This file contains **30+ JavaScript practice questions with solutions** covering:  
+This file contains **28 JavaScript practice questions with solutions** covering:  
 - `Fetch API` with `.then()` and `async/await`  
 - Error handling with `.catch()` & `try...catch`  
 - GET and POST requests  
