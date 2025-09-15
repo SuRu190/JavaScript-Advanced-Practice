@@ -2,7 +2,7 @@
 
 This repository is a **10-day JavaScript advanced learning challenge**.  
 Each day focuses on a **specific set of advanced JS topics** with **practice questions and answers**.
-
+ 
 ---
 
 ## 📘 About This Repo
