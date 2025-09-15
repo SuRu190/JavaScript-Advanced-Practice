@@ -98,6 +98,25 @@ Each day focuses on a **specific set of advanced JS topics** with **practice que
 
 ---
 
+### 🌐 Day 7 – Fetch, Async/Await & JSON
+- **Topics Covered:**  
+  - `Fetch API` with `.then()` and `async/await`  
+  - Error handling with `.catch()` & `try...catch`  
+  - GET and POST requests  
+  - `JSON.stringify()` & `JSON.parse()`  
+  - Working with **JSONPlaceholder** and external APIs  
+- **Total Questions:** 26  
+- **What I Practiced & Learned:**  
+  - Fetching data using both `.then()` and `async/await`  
+  - Better error handling with `try...catch`  
+  - Making **GET** and **POST** API requests  
+  - Converting objects ↔ JSON strings with `stringify` & `parse`  
+  - Working with real APIs (JSONPlaceholder, Joke API)  
+  - Displaying limited API results with `slice()`  
+  - Handling edge cases like invalid URLs or empty responses  
+
+---
+
 ## ✅ Why This Repo?
 - To **master advanced JavaScript step by step**.  
 - To **practice coding daily** and stay consistent.  
