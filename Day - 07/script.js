@@ -172,7 +172,6 @@ async function fetchPostsById(id) {
 fetchPostsById(5); // valid
 fetchPostsById(9999); // not found
 
-
 // ====================================================
 // 🔹 Error Handling
 // ====================================================
