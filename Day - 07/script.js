@@ -230,7 +230,6 @@ let string = `{ "name": "Suresh", "city": "Delhi" }`;
 let changeString = JSON.parse(string);
 console.log("Changed:", changeString);
 
-
 // ====================================================
 // 🔹 Mixed Practice
 // ====================================================
