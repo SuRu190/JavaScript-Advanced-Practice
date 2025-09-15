@@ -35,7 +35,6 @@ fetch("https://jsonplaceholder.typicode.com/users/1")
     .then((data) => console.log(`User Name: ${data.name}`))
     .catch((err) => console.log(err));
 
-
 // ====================================================
 // 🔹 Async/Await
 // ====================================================
