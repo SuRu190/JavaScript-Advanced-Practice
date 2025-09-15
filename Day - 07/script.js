@@ -1,184 +1,316 @@
-// 🚀 Day 7 – Fetch API, Async/Await & JSON
-// ==========================================
-// This file contains all practice questions (Q1 – Q18)
-// Each question has explanation + solution.
+// 🚀 Day 7 – Fetch API, Async/Await, JSON & Error Handling
+// This file contains practice questions covering:
+// - Fetch API with .then()
+// - Async/Await
+// - Error Handling (try...catch)
+// - JSON (parse, stringify)
+// - Mixed Practice (nested fetch, multiple endpoints)
+
 
 // ====================================================
-// 🔹 Fetch API Basics
+// 🔹 Fetch API with .then()
 // ====================================================
 
-// Q1. Fetch data from an API
+// Q1. Fetch a single post
 fetch("https://jsonplaceholder.typicode.com/posts/1")
-  .then(res => res.json())
-  .then(data => console.log("Post 1:", data));
+    .then((response) => response.json())
+    .then((data) => console.log(data))
+    .catch((error) => console.log("Error:", error));
 
-// Q2. Handle fetch error
-fetch("https://invalid-api-url.com/data")
-  .then(res => res.json())
-  .catch(err => console.error("Error:", err.message));
+// Q2. Invalid fetch URL
+fetch("https://wrong-api-url.com/data")
+    .then((response) => response.json())
+    .then((data) => console.log(data))
+    .catch((err) => console.log("API Fetch Failed:", err));
+
+// Q3. Joke API with .then()
+fetch("https://official-joke-api.appspot.com/random_joke")
+    .then((response) => response.json())
+    .then((data) => console.log(data))
+    .catch((err) => console.log("Error:", err));
+
+// Q4. Fake URL error handling
+fetch("https://www.fakeurl.com")
+    .then((response) => response.json())
+    .then((msg) => console.log(msg))
+    .catch((err) => console.log("Error:", err));
+
+// Q5. Fetch + .then() User API
+fetch("https://jsonplaceholder.typicode.com/users/1")
+    .then((response) => response.json())
+    .then((data) => console.log(`User Name: ${data.name}`))
+    .catch((err) => console.log(err));
 
 
 // ====================================================
-// 🔹 Async / Await
+// 🔹 Async/Await
 // ====================================================
 
-// Q3. Using async/await for fetch
-async function fetchUser() {
-  try {
-    const res = await fetch("https://jsonplaceholder.typicode.com/users/1");
-    const data = await res.json();
-    console.log("User:", data);
-  } catch (err) {
-    console.error("Error:", err);
-  }
+// Q6. Fetch single post with async/await
+async function getPost() {
+    try {
+        const response = await fetch("https://jsonplaceholder.typicode.com/posts/2");
+        const data = await response.json();
+        console.log("Post Data:", data);
+    } catch (error) {
+        console.log("Error:", error);
+    }
 }
-fetchUser();
+getPost();
 
-
-// ====================================================
-// 🔹 JSON Methods
-// ====================================================
-
-// Q4. Convert JSON string to object
-const str = '{"name":"Suresh","age":22}';
-console.log(JSON.parse(str));
-
-// Q5. Convert object to JSON string
-const obj = { product: "Laptop", price: 55000 };
-console.log(JSON.stringify(obj));
-
-
-// ====================================================
-// 🔹 API Data Handling
-// ====================================================
-
-// Q6. Fetch posts & show titles
+// Q7. Fetch multiple posts (first 5 only)
 async function getPosts() {
-  const res = await fetch("https://jsonplaceholder.typicode.com/posts");
-  const posts = await res.json();
-  console.log(posts.map(p => p.title));
+    try {
+        const response = await fetch("https://jsonplaceholder.typicode.com/posts");
+        const posts = await response.json();
+
+        posts.slice(0, 5).forEach((post) => {
+            console.log(`📝 ${post.id}. ${post.title}`);
+        });
+    } catch (error) {
+        console.log("❌ Error:", error);
+    }
 }
 getPosts();
 
-// Q7. Fetch users & show names
-async function getUsers() {
-  const res = await fetch("https://jsonplaceholder.typicode.com/users");
-  const users = await res.json();
-  users.forEach(u => console.log(u.name));
+// Q8. Fetch joke with async/await
+async function joke() {
+    try {
+        const response = await fetch("https://official-joke-api.appspot.com/random_joke");
+        const data = await response.json();
+        console.log("Joke:", data);
+    } catch (error) {
+        console.log("Error:", error);
+    }
 }
-getUsers();
+joke();
 
-// Q8. Fetch comments of postId=1
-async function getComments() {
-  const res = await fetch("https://jsonplaceholder.typicode.com/comments");
-  const comments = await res.json();
-  console.log(comments.filter(c => c.postId === 1));
+// Q9. Invalid fetch with async/await
+async function invalid() {
+    try {
+        const response = await fetch("https://www.fakeurl.com");
+        const dat = await response.json();
+        console.log("Data:", dat);
+    } catch (error) {
+        console.log("Again Error:", error);
+    }
 }
-getComments();
+invalid();
 
-// Q9. Fetch completed todos
-async function getTodos() {
-  const res = await fetch("https://jsonplaceholder.typicode.com/todos");
-  const todos = await res.json();
-  console.log(todos.filter(t => t.completed));
+// Q10. Todos API
+async function todos() {
+    try {
+        const response = await fetch("https://jsonplaceholder.typicode.com/todos");
+        const todos = await response.json();
+
+        todos.slice(0, 3).forEach((todo) => {
+            console.log(`Title: ${todo.title}, Status = ${todo.completed}`);
+        });
+    } catch (error) {
+        console.log("Error:", error);
+    }
 }
-getTodos();
+todos();
+
+// Q11. Comments API
+async function comment() {
+    try {
+        const response = await fetch("https://jsonplaceholder.typicode.com/comments?postId=1");
+        const cmnt = await response.json();
+        cmnt.forEach((coment) => {
+            console.log(`Email = ${coment.email}`);
+        });
+    } catch (error) {
+        console.log("Error:", error);
+    }
+}
+comment();
+
+// Q12. Albums API
+async function albums() {
+    try {
+        const response = await fetch("https://jsonplaceholder.typicode.com/albums");
+        const albums = await response.json();
+
+        albums.slice(0, 5).forEach((album) => {
+            console.log(`Album Title = ${album.title}`);
+        });
+    } catch (error) {
+        console.log("Error:", error);
+    }
+}
+albums();
+
+// Q13. Fetch posts limited
+async function letPosts() {
+    try {
+        const response = await fetch("https://jsonplaceholder.typicode.com/posts");
+        const posts = await response.json();
+
+        posts.slice(0, 5).forEach((post) => {
+            console.log(`📝 ${post.id}. ${post.title}`);
+        });
+    } catch (error) {
+        console.log("❌ Error:", error);
+    }
+}
+letPosts();
+
+// Q14. Fetch by ID (valid + invalid)
+async function fetchPostsById(id) {
+    try {
+        const response = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
+
+        if (!response.ok) {
+            throw new Error("Post not found");
+        }
+
+        const post = await response.json();
+
+        if (Object.keys(post).length === 0) {
+            console.log("Post not found");
+        } else {
+            console.log(`Post ID: ${post.id}, Title: ${post.title}`);
+        }
+    } catch (error) {
+        console.log("Error:", error.message);
+    }
+}
+fetchPostsById(5); // valid
+fetchPostsById(9999); // not found
 
 
 // ====================================================
-// 🔹 Advanced Fetch Handling
+// 🔹 Error Handling
 // ====================================================
 
-// Q10. Handle status codes
-async function fetchStatus() {
-  const res = await fetch("https://jsonplaceholder.typicode.com/posts/1");
-  if (!res.ok) return console.error("Error Code:", res.status);
-  console.log(await res.json());
+// Q15. Fake URL error
+async function fakeurl() {
+    try {
+        const response = await fetch("https://fakeurl123.com");
+        const url = await response.json();
+        console.log("Success");
+    } catch (error) {
+        console.log("❌ Something went wrong");
+    }
 }
-fetchStatus();
-
-// Q11. Promise.all() multiple fetch
-async function fetchAll() {
-  const [users, posts] = await Promise.all([
-    fetch("https://jsonplaceholder.typicode.com/users").then(r => r.json()),
-    fetch("https://jsonplaceholder.typicode.com/posts").then(r => r.json())
-  ]);
-  console.log("Users:", users.length, "Posts:", posts.length);
-}
-fetchAll();
-
-// Q12. Nested object properties
-async function getNested() {
-  const res = await fetch("https://jsonplaceholder.typicode.com/users/1");
-  const user = await res.json();
-  console.log(user.name, "-", user.address.city);
-}
-getNested();
-
-// Q13. Loading simulation
-async function fetchLoading() {
-  console.log("Loading...");
-  const res = await fetch("https://jsonplaceholder.typicode.com/posts/2");
-  console.log(await res.json());
-  console.log("Done ✅");
-}
-fetchLoading();
-
-// Q14. Handle invalid JSON
-async function invalidJson() {
-  const res = await fetch("https://jsonplaceholder.typicode.com/posts/1");
-  console.log(await res.text());
-}
-invalidJson();
+fakeurl();
 
 
 // ====================================================
-// 🔹 API Requests
+// 🔹 JSON Practice
 // ====================================================
 
-// Q15. POST request
-async function addPost() {
-  const res = await fetch("https://jsonplaceholder.typicode.com/posts", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ title: "New Post", body: "Learning Fetch", userId: 1 })
-  });
-  console.log(await res.json());
-}
-addPost();
+// Q16. Object → JSON String
+const user = { name: "Suresh", age: 22, skills: ["HTML", "CSS", "JS"] };
+const jsonData = JSON.stringify(user);
+console.log("JSON String:", jsonData);
 
-// Q16. PUT request
-async function updatePost() {
-  const res = await fetch("https://jsonplaceholder.typicode.com/posts/1", {
-    method: "PUT",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ id: 1, title: "Updated Title", body: "Updated Content", userId: 1 })
-  });
-  console.log(await res.json());
-}
-updatePost();
+// Q17. JSON String → Object
+const jsonString = `{ "company": "OpenAI", "product": "ChatGPT", "year": 2025 }`;
+const obj = JSON.parse(jsonString);
+console.log("Parsed Obj:", obj);
+console.log("Company:", obj.company);
 
-// Q17. DELETE request
-async function deletePost() {
-  const res = await fetch("https://jsonplaceholder.typicode.com/posts/1", { method: "DELETE" });
-  console.log("Deleted! Status:", res.status);
-}
-deletePost();
+// Q18. Convert object
+let obj2 = { name: "Suresh", age: 22, skills: ["HTML", "CSS", "JavaScript"] };
+const change = JSON.stringify(obj2);
+console.log("Converted String:", change);
+
+// Q19. Convert string back to JSON
+let jsonString2 = `{ "company":"OpenAI","product":"ChatGPT" }`;
+const toJson = JSON.parse(jsonString2);
+console.log("Converted JSON:", toJson);
+
+// Q20. Object to String & back
+let person = { name: "Suresh", city: "Delhi", skills: ["HTML", "CSS", "JS"] };
+let changeToString = JSON.stringify(person);
+console.log("JSON String =", changeToString);
+let changetoJson = JSON.parse(changeToString);
+console.log("Back to Object =", changetoJson);
+
+// Q21. Another object practice
+let obj3 = { id: 101, title: "My Post", body: "This is test" };
+let changeObj = JSON.stringify(obj3);
+console.log(`Changed: ${changeObj}`);
+
+// Q22. JSON.parse practice
+let string = `{ "name": "Suresh", "city": "Delhi" }`;
+let changeString = JSON.parse(string);
+console.log("Changed:", changeString);
 
 
 // ====================================================
-// 🔹 Async Cleanup
+// 🔹 Mixed Practice
 // ====================================================
 
-// Q18. try/catch/finally
-async function fetchFinally() {
-  try {
-    const res = await fetch("https://jsonplaceholder.typicode.com/users/2");
-    console.log(await res.json());
-  } catch (err) {
-    console.error("Error:", err);
-  } finally {
-    console.log("Fetch attempt finished ✅");
-  }
+// Q23. Create a post (POST request)
+async function createPosts() {
+    try {
+        const newPost = {
+            title: "Learning Fetch API",
+            body: "This is a new post",
+            userId: 1
+        };
+
+        const response = await fetch("https://jsonplaceholder.typicode.com/posts", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(newPost)
+        });
+
+        const data = await response.json();
+        console.log("✅ Post Created:", data);
+    } catch (error) {
+        console.log("❌ Error:", error);
+    }
 }
-fetchFinally();
+createPosts();
+
+// Q24. Photos API
+async function photos() {
+    try {
+        const response = await fetch("https://jsonplaceholder.typicode.com/photos");
+        const photos = await response.json();
+
+        photos.slice(0, 3).forEach((photo) => {
+            console.log(`Title: ${photo.title}, Thumbnail: ${photo.thumbnailUrl}`);
+        });
+    } catch (error) {
+        console.log("Error:", error);
+    }
+}
+photos();
+
+// Q25. Fetch user and their posts
+async function fetchUserAndPosts() {
+    try {
+        const userResponse = await fetch("https://jsonplaceholder.typicode.com/users/1");
+        const user = await userResponse.json();
+
+        console.log(`👤 User: ${user.name} | Email: ${user.email}`);
+
+        const postsResponse = await fetch(`https://jsonplaceholder.typicode.com/posts?userId=${user.id}`);
+        const posts = await postsResponse.json();
+
+        console.log(`📝 ${user.name}'s Posts`);
+        posts.slice(0, 5).forEach((post) => {
+            console.log(`- ${post.title}`);
+        });
+    } catch (error) {
+        console.log("ERROR:", error.message);
+    }
+}
+fetchUserAndPosts();
+
+// Q26. Post by ID log
+async function log() {
+    try {
+        const userPost = await fetch("https://jsonplaceholder.typicode.com/posts/1");
+        const log = await userPost.json();
+        console.log(`Post Title: ${log.title}`);
+    } catch (error) {
+        console.log("Error:", error);
+    }
+}
+log();
