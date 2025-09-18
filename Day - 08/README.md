@@ -20,7 +20,7 @@ This file contains **10 JavaScript practice questions with solutions** covering:
 - Save and restore **form input values**
 - Session-based storage using **sessionStorage**
 
----
+--- 
 
 ## 💡 What I Practiced & Learned
 - Difference between **localStorage (persistent)** vs **sessionStorage (tab-based)**
