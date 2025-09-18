@@ -7,7 +7,7 @@ This file contains **10 JavaScript practice questions with solutions** covering:
 - Counters & checks
 - Theme toggle with persistence
 - Saving form data in localStorage
- 
+
 ---
 
 ## 🎯 Topics Covered
