@@ -9,7 +9,7 @@ This file contains **10 JavaScript practice questions with solutions** covering:
 - Saving form data in localStorage
  
 --- 
- 
+
 ## 🎯 Topics Covered
 - Store and retrieve simple data in **localStorage**
 - Store **objects/arrays** using `JSON.stringify` & `JSON.parse`
