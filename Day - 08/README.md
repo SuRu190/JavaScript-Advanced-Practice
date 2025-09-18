@@ -41,7 +41,8 @@ Each Question has been added inside [`script.js`](./script.js).
 ---
 
 ### 🔑 Sample Outputs
-- **Q1:** `Hello, Suresh`  
+- **Q1:** `Hello, Suresh`
+- **Q2:** Store and Retrieve object `LoggedIn: true`  
 - **Q3:** Count increments on each run  
 - **Q4:** Logs `"Second fruit is: banana"`  
 - **Q5:** Logs `"Name: Suresh, Skill: HTML"`  
