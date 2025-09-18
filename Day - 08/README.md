@@ -8,7 +8,7 @@ This file contains **10 JavaScript practice questions with solutions** covering:
 - Theme toggle with persistence
 - Saving form data in localStorage
  
---- 
+---
 
 ## 🎯 Topics Covered
 - Store and retrieve simple data in **localStorage**
