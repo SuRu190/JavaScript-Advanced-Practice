@@ -117,6 +117,26 @@ Each day focuses on a **specific set of advanced JS topics** with **practice que
 
 ---
 
+### 💾 Day 8 – LocalStorage & SessionStorage
+- **Topics Covered:**  
+  - `localStorage` & `sessionStorage`  
+  - Storing strings, objects, and arrays  
+  - Counters & checks  
+  - Theme toggle with persistence  
+  - Saving form data in localStorage  
+- **Total Questions:** 10  
+- **What I Practiced & Learned:**  
+  - Difference between **localStorage (persistent)** vs **sessionStorage (tab-based)**  
+  - How to **store objects & arrays** properly (must stringify/parse)  
+  - Clearing storage vs removing specific items  
+  - Building **real use-cases** like:  
+    - Persistent counters  
+    - Theme preference  
+    - Saving form data locally  
+  - Using DOM + Storage APIs together  
+
+---
+
 ## ✅ Why This Repo?
 - To **master advanced JavaScript step by step**.  
 - To **practice coding daily** and stay consistent.  
