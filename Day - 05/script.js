@@ -1,5 +1,5 @@
 // ⚙️ Day 5 – DOM Projects
-// This file contains 4 mini-projects covering: Counter, Random Color Generator
+// This file contains 4 mini-projects covering: Counter, Random Color Generator, To-Do List
 
 // ==================================================
 // 1️⃣ Counter
