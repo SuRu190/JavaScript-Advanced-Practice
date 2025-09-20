@@ -23,6 +23,7 @@ document.getElementById("reset").addEventListener("click", () => {
 // ==================================================
 // 2️⃣ Random Color Generator
 // ==================================================
+
 const colorBox = document.getElementById("colorBox");
 document.getElementById("generateColor").addEventListener("click", () => {
   const randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
