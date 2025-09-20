@@ -1,5 +1,5 @@
 // ⚙️ Day 5 – DOM Projects
-// This file contains 4 mini-projects covering: 
+// This file contains 4 mini-projects covering: Counter
 
 // ==================================================
 // 1️⃣ Counter
