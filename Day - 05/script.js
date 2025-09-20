@@ -50,6 +50,7 @@ document.getElementById("addTodo").addEventListener("click", () => {
 // ==================================================
 // 4️⃣ Live Text Preview
 // ==================================================
+
 const liveInput = document.getElementById("liveInput");
 const liveOutput = document.getElementById("liveOutput");
 
