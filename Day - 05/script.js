@@ -34,6 +34,7 @@ document.getElementById("generateColor").addEventListener("click", () => {
 // ==================================================
 // 3️⃣ To-Do List
 // ==================================================
+
 const todoInput = document.getElementById("todoInput");
 const todoList = document.getElementById("todoList");
 
