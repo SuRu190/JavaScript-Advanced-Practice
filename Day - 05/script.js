@@ -4,6 +4,7 @@
 // ==================================================
 // 1️⃣ Counter
 // ==================================================
+
 let count = 0;
 const countEl = document.getElementById("count");
 document.getElementById("increase").addEventListener("click", () => {
