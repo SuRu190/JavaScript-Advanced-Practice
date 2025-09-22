@@ -1,4 +1,4 @@
-# 🚀 Day - 09 | Mixed Revision, covering all
+# 🚀 Day - 09 | Mixed Revision, covering all 
 
 ## 📌 Overview
 This day is a **revision mix** of **Day-01 to Day-08** covering all major topics:  
