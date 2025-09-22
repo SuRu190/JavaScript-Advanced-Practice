@@ -1,4 +1,4 @@
-// 🚀 Day 8 – LocalStorage & SessionStorage
+// 🚀 Day 9 – Mixed Revision
 // This file contains 10 practice questions with solutions covering: localStorage, sessionStorage, storing strings/objects/arrays, counters, theme toggle, form persistence.
 
 // ==========================
