@@ -1,3 +1,6 @@
+// 🚀 Day 8 – LocalStorage & SessionStorage
+// This file contains 10 practice questions with solutions covering: localStorage, sessionStorage, storing strings/objects/arrays, counters, theme toggle, form persistence.
+
 // ==========================
 // Day - 01 | Advanced Functions
 // ==========================
