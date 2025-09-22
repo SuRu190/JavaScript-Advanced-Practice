@@ -1,13 +1,13 @@
-# 🚀 JavaScript 10-Day Advanced Practice
+# 🚀 JavaScript Advanced Practice
 
-This repository is a **10-day JavaScript advanced learning challenge**.  
+This repository is a **JavaScript advanced learning challenge**.  
 Each day focuses on a **specific set of advanced JS topics** with **practice questions and answers**.
 
 ---
 
 ## 📘 About This Repo
 - Covers **modern JavaScript concepts** step by step.  
-- Structured into **10 folders (Day-01 → Day-10)**.  
+- Structured into **Folders (Day - Wise)**.  
 - Each folder contains:
   - A `.js` file with all questions + answers in code format.
   - A `README.md` file (detailed explanation of that day).
