@@ -137,6 +137,24 @@ Each day focuses on a **specific set of advanced JS topics** with **practice que
 
 ---
 
+### 📝 Day 9 – Mixed Revision
+- **Overview:** A **revision mix** of Day-01 to Day-08 covering all major topics.  
+- **Topics Covered:**  
+  - Advanced Functions (Rest/Spread, Closures, Default Params)  
+  - Arrays (`map`, `filter`, `reduce`, `slice`, `splice`, etc.)  
+  - ES6+ Features (Destructuring, Template Literals, let/const)  
+  - DOM Events (`click`, `keydown`, `submit`, etc.)  
+  - Async JS (setTimeout, setInterval, Promises, Async/Await)  
+  - Fetch API & JSON handling  
+  - LocalStorage + SessionStorage  
+- **What I Practiced & Learned:**  
+  - Strong revision of **functions, arrays, ES6, DOM**  
+  - Hands-on with **Promises, fetch, and storage APIs**  
+  - Realistic use-cases: form handling, theme toggle, API calls  
+  - Confidence in **core + advanced concepts together**  
+
+---
+
 ## ✅ Why This Repo?
 - To **master advanced JavaScript step by step**.  
 - To **practice coding daily** and stay consistent.  
